@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savanna Brew | Coffee and Kitchen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+  <a href="#home" class="logo">Savanna Brew</a>
+
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">&#9776;</button>
+
+  <nav id="nav-menu">
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reservation">Reserve</a>
+  <a href="login.html" id="auth-link">Login</a>
+  <button id="theme-toggle" class="theme-toggle">Dark mode</button>
+  </nav>
+</header>
+  <main>
+    <section id="home" class="hero">
+
+  <div class="hero-slides">
+    <img src="images/hero1.jpg" alt="" class="hero-slide active">
+    <img src="images/hero2.jpg" alt="" class="hero-slide">
+    <img src="images/hero3.jpg" alt="" class="hero-slide">
+  </div>
+
+  <button class="slider-arrow slider-prev" id="slider-prev" aria-label="Previous photo">&#10094;</button>
+  <button class="slider-arrow slider-next" id="slider-next" aria-label="Next photo">&#10095;</button>
+  <div class="slider-dots" id="slider-dots"></div>
+
+  <h1>Good coffee. Good food. Good company.</h1>
+  <p>Freshly roasted coffee, hearty meals and sweet treats, served all day.</p>
+  <a href="#menu" class="btn">See the menu</a>
+  <a href="#reservation" class="btn btn-outline">Book a table</a>
+</section>
+<section id="intro" class="intro">
+  <div class="intro-text">
+    <p class="intro-label">Welcome</p>
+    <h2>A neighbourhood cafe made for slow mornings and long lunches</h2>
+    <p>At Savanna Brew we roast our coffee with care, cook every meal fresh, and keep a table free for anyone who wants to stay a while. Whether you are grabbing an espresso on the way to work or settling in with friends, you are welcome here.</p>
+    <a href="#about" class="intro-link">Read our story &rarr;</a>
+  </div>
+
+  <div class="intro-highlights">
+    <div class="intro-highlight">
+      <p class="highlight-title">Fresh daily</p>
+      <p>Meals and bakes made every morning.</p>
+    </div>
+    <div class="intro-highlight">
+      <p class="highlight-title">Open every day</p>
+      <p>7:00 AM to 9:00 PM, all week.</p>
+    </div>
+    <div class="intro-highlight">
+      <p class="highlight-title">Book a table</p>
+      <p>Reserve online for groups and special occasions.</p>
+    </div>
+  </div>
+</section>
+
+
+    <section id="menu">
+  <h2>Our Menu</h2>
+
+  <div class="menu-tabs">
+    <button class="menu-tab active" data-category="All">All</button>
+    <button class="menu-tab" data-category="Coffee">Coffee</button>
+    <button class="menu-tab" data-category="Fast food">Fast food</button>
+    <button class="menu-tab" data-category="Desserts">Desserts</button>
+    <button class="menu-tab" data-category="Beverages">Beverages</button>
+    <button class="menu-tab" data-category="Special dishes">Special dishes</button>
+  </div>
+
+  <div id="menu-grid" class="menu-grid"></div>
+
+</section>
+
+  <section id="about">
+  <h2>About Us</h2>
+
+  <div class="about-layout">
+    <img src="images/about.jpg" alt="Inside the cafe" class="about-image">
+
+    <div class="about-text">
+      <h3>Our story</h3>
+      <p>Savanna Brew started as a small coffee corner with one espresso machine and a big idea: a place where people could slow down over a good cup. Today we still roast and brew with the same care, and we have added a full kitchen so you can stay for breakfast, lunch or a late afternoon treat.</p>
+      <p>Everything on our menu is made fresh each day, from the pilau simmered slowly to the cakes baked every morning.</p>
+    </div>
+  </div>
+
+  
+<div class="about-point">
+  <h3>Our specialties</h3>
+  <p>The dishes our regulars order again and again: slow-brewed masala tea, chef's pilau with fresh salad, and our chocolate cake baked every morning.</p>
+</div>
+
+    <div class="about-point">
+      <h3>The experience</h3>
+      <p>A warm, relaxed space with soft music, comfortable seating and a terrace for sunny days. Come alone with a book or bring the whole family.</p>
+    </div>
+
+  <div class="about-point">
+  <h3>Quality</h3>
+  <p>Locally sourced coffee beans, fresh ingredients and no shortcuts. Everything on the menu is made from scratch each day.</p>
+</div>
+  </div>
+</section>
+
+   <section id="gallery">
+  <h2>Gallery</h2>
+
+  <div class="gallery-grid">
+    <img src="images/gallery1.jpg" alt="Cafe interior with wooden tables" class="gallery-wide">
+    <img src="images/gallery2.jpg" alt="Coffee being poured into a cup">
+    <img src="images/gallery3.jpg" alt="Fresh pastries on a plate">
+    <img src="images/gallery4.jpg" alt="Barista preparing espresso">
+    <img src="images/gallery5.jpg" alt="Plated lunch special">
+    <img src="images/gallery6.jpg" alt="Outdoor terrace seating">
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button id="lightbox-close" class="lightbox-close" aria-label="Close picture">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<section id="reviews">
+  <h2>What Customers Say</h2>
+  <p class="reviews-note">Sample reviews for this demo project.</p>
+
+  <div class="testimonial-grid">
+    <blockquote class="testimonial">
+      <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      <p>The masala tea is the best I have had outside of home. Quiet corners and fast Wi-Fi made it my study spot.</p>
+      <footer>Amina K.</footer>
+    </blockquote>
+
+    <blockquote class="testimonial">
+      <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      <p>We booked a table for a birthday lunch and everything was ready when we arrived. The chocolate cake disappeared in minutes.</p>
+      <footer>Brian O.</footer>
+    </blockquote>
+
+    <blockquote class="testimonial">
+      <p class="stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+      <p>Great cappuccino and a relaxed atmosphere. It gets busy on weekends, so reserve ahead.</p>
+      <footer>Cynthia M.</footer>
+    </blockquote>
+  </div>
+</section>
+
+    <section id="reservation">
+  <h2>Reserve a Table</h2>
+  <p class="form-intro">Tell us when you are coming and we will have a table ready. We are open every day from 7:00 AM to 9:00 PM.</p>
+
+  <form id="reservation-form" novalidate>
+    <div class="form-group">
+      <label for="res-name">Full name</label>
+      <input type="text" id="res-name" placeholder="e.g. Jane Wanjiku">
+      <small class="error" id="res-name-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="res-phone">Phone number</label>
+      <input type="tel" id="res-phone" placeholder="e.g. 0712345678">
+      <small class="error" id="res-phone-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="res-email">Email</label>
+      <input type="email" id="res-email" placeholder="e.g. jane@example.com">
+      <small class="error" id="res-email-error"></small>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="res-date">Date</label>
+        <input type="date" id="res-date">
+        <small class="error" id="res-date-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="res-time">Time</label>
+        <input type="time" id="res-time" min="07:00" max="21:00">
+        <small class="error" id="res-time-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="res-guests">Guests</label>
+        <select id="res-guests">
+          <option value="">Select</option>
+          <option value="1">3 people</option>
+          <option value="2">4 people</option>
+          <option value="3">5 people</option>
+        </select>
+        <small class="error" id="res-guests-error"></small>
+      </div>
+    </div>
+
+ <button type="submit" class="btn btn-submit">Request reservation</button>
+  </form>
+
+  <div id="reservation-success" class="success" hidden></div>
+</section>
+
+  <footer id="contact">
+  <div class="footer-content">
+    <div>
+      <h3>Savanna Brew</h3>
+      <p>Coffee, food and good company, every day.</p>
+    </div>
+
+    <div>
+      <h3>Visit us</h3>
+      <p>Moi Avenue, Nairobi</p>
+      <p>Open daily, 7:00 AM to 9:00 PM</p>
+      <p>Phone: +254 716683756</p>
+      <p>Email: elizabethnangila25@gmail.com</p>
+    </div>
+
+    <div>
+      <h3>Follow us</h3>
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </div>
+
+  <p class="copyright">&copy; 2026 Savanna Brew. All rights reserved.</p>
+</footer>
+   
+    <button id="cart-button" class="cart-button" aria-label="Open your order">
+  Your order (<span id="cart-count">0</span>)
+</button>
+
+<aside id="cart-panel" class="cart-panel" aria-label="Your order" hidden>
+  <div class="cart-header">
+    <h3>Your order</h3>
+    <button id="cart-close" class="cart-close" aria-label="Close order">&times;</button>
+  </div>
+
+  <div id="cart-items"></div>
+
+  <p class="cart-total">Total: <strong id="cart-total">KSh 0</strong></p>
+
+  <div class="cart-actions">
+    <button id="place-order" class="btn btn-submit">Place order</button>
+    <button id="clear-cart" class="clear-btn">Clear order</button>
+  </div>
+
+  <p id="order-message" class="success" hidden></p>
+</aside>
+ <script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
+   <script src="js/cart.js"></script> 
+   <script src="js/auth-nav.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+
+</html
